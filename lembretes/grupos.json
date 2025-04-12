@@ -1,0 +1,40 @@
+[
+    {
+      "grupo": "Equipe 1 - Javascript",
+      "diaSemana": 1,
+      "hora": "18:00",
+      "frequencia": "semanal"
+    },
+    {
+      "grupo": "Equipe 2 - Python",
+      "diaSemana": 2,
+      "hora": "12:30",
+      "frequencia": "quinzenal",
+      "semanaInicial": "2025-04-07"
+    },
+    {
+      "grupo": "Equipe 3 - Python",
+      "diaSemana": 2,
+      "hora": "18:00",
+      "frequencia": "semanal"
+    },
+    {
+      "grupo": "Equipe 5 - Java",
+      "diaSemana": 0,
+      "hora": "10:30",
+      "frequencia": "semanal"
+    },
+    {
+      "grupo": "Equipe 7 - Python",
+      "diaSemana": 1,
+      "hora": "18:30",
+      "frequencia": "semanal"
+    },
+    {
+      "grupo": "Equipe 8 - Java",
+      "diaSemana": 5,
+      "hora": "19:30",
+      "frequencia": "semanal"
+    }
+  ]
+  
