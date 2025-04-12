@@ -13,9 +13,18 @@ client.on("qr", (qr) => {
   qrcode.generate(qr, { small: true });
 });
 
-client.on("ready", () => {
+client.on("ready", async () => {
   console.log("✅ WhatsApp pronto!");
+
+  const chats = await client.getChats();
+  const grupos = chats.filter(chat => chat.isGroup);
+
+  console.log(`📂 Total de grupos encontrados: ${grupos.length}`);
+  grupos.forEach(grupo => {
+    console.log(`📛 Grupo: ${grupo.name}`);
+  });
 });
+
 
 async function enviarMensagem(grupo, mensagem) {
   const chats = await client.getChats();
