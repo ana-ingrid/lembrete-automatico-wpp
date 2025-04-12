@@ -12,14 +12,14 @@ function agendarLembretes() {
     const dataLembrete1 = moment(proximaData).subtract(1, 'day');
     const cronLembrete1 = dataLembrete1.format("m H D M d");
     cron.schedule(cronLembrete1, () => {
-      enviarMensagem(grupo, `📢 Reunião marcada para amanhã às ${hora}. Estão preparadas?`);
+      enviarMensagem(grupo, `📢 Reunião marcada para amanhã às ${hora}. Todas confirmadas?`);
     });
 
     // Lembrete 3 horas antes
     const dataLembrete2 = moment(proximaData).subtract(3, 'hours');
     const cronLembrete2 = dataLembrete2.format("m H D M d");
     cron.schedule(cronLembrete2, () => {
-      enviarMensagem(grupo, `⏰ Lembrete: reunião hoje às ${hora}. Confirma presença?`);
+      enviarMensagem(grupo, `⏰ Lembrete: reunião hoje às ${hora}.`);
     });
   });
 }
